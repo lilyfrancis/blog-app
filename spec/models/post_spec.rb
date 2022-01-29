@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
   describe 'Validaiton for post' do
     subject do
-      lily = User.new(name: 'Lily Fr', photo: 'profile.png',
-                       bio: 'I am the best software developer', posts_counter: 0)
+      lily = User.new(name: 'Henry Kc', photo: 'profile.png',
+                      bio: 'I am coming out to be the best computer programmer', posts_counter: 0)
       Post.new(title: 'My best friend', text: 'Will soon be revealed',
                comments_counter: 3, likes_counter: 3, author_id: lily.id)
     end
